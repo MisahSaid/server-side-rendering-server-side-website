@@ -6,7 +6,7 @@
 ## Inhoudsopgave
 
   * [Debriefing](#debriefing)
-  * [User Story](#userstory)
+  * [User Story](https://github.com/MisahSaid/server-side-rendering-server-side-website/blob/main/README.md#user-story)
   * [Gebruik](#gebruik)
   * [Kenmerken](#kenmerken)
   * [Installatie](#installatie)
