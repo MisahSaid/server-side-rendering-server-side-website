@@ -1,0 +1,109 @@
+:root {
+    --background-color: linear-gradient(1.76deg, #142151 1.49%, #471871 98.51%);
+    --purplebutton: #9264F4;
+    --regularfont: 'Poppins-Regular', sans-serif;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+
+body{
+    background: linear-gradient(180deg, rgba(71,24,113,1) 0%, rgba(20,33,81,1) 100%);
+    color: beige;
+    font-family: var(--regularfont);
+    margin: 1em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 20px;
+}
+
+/* story settings */
+h2{
+    font-size: 20px;
+    color: white;
+}
+
+p{
+    font-size: 12px;
+}
+
+ul{
+    padding: 0;
+}
+
+
+/* personas */
+
+li{
+  list-style-type: none; 
+  background-color: white; 
+  border-radius: .5em;
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 25%;
+  text-align: center;
+}
+
+.personas p, h3{
+    color: black;
+    margin: 0;
+}
+
+li h2{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.next {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.next p{
+    font-size: 20px;
+    margin: 0;
+}
+
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+}
+
+.bg p{
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+
+h4{
+    padding-top: 1.5em;
+    margin: 0;
+    font-size: 20px;
+}
+
+h5{
+    font-size: 20px;
+    margin-bottom: .5em;
+}
+
+.volume svg{
+    text-align: center;
+    max-width: 100%;
+}

@@ -1,5 +1,5 @@
 // Importeer het npm pakket express uit de node_modules map
-import express from 'express'
+import express, { response } from 'express'
 
 // Importeer de zelfgemaakte functie fetchJson uit de ./helpers map
 import fetchJson from './helpers/fetch-json.js'
@@ -26,13 +26,29 @@ app.use(express.static('public'))
 app.set('port', process.env.PORT || 8000)
 
 
-// TODO: routes voor deze pizza applicatie..
+// TODO: routes voor deze pizza applicatie.. GET
 app.get('/', function(request, response) {
-  response.render('lessons')
+
+  fetchJson('https://fdnd-agency.directus.app/items/tm_story').then((storiesDataUitDeAPI) => {
+    response.render('lessons', {stories: storiesDataUitDeAPI.data})
+  });
 })
 
-// get
+app.get('/stories', function(request, response) {
 
+  fetchJson('https://fdnd-agency.directus.app/items/tm_story').then((storiesDataUitDeAPI) => {
+    response.render('stories', {stories: storiesDataUitDeAPI.data})
+  });
+  
+})
+
+app.get('/playlistsettings', function(request, response) {
+
+  fetchJson('https://fdnd-agency.directus.app/items/tm_speaker_profile').then((speakerDataUitDeAPI) => {
+    response.render('playlistsettings', {speaker: speakerDataUitDeAPI.data})
+  });
+  
+})
 
 
 // Start express op, haal daarbij het zojuist ingestelde poortnummer op

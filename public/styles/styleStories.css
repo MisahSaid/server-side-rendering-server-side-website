@@ -1,0 +1,136 @@
+:root {
+    --background-color: linear-gradient(1.76deg, #142151 1.49%, #471871 98.51%);
+    --purplebutton: #9264F4;
+    --regularfont: 'Poppins-Regular', sans-serif;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+
+body{
+    background: linear-gradient(180deg, rgba(71,24,113,1) 0%, rgba(20,33,81,1) 100%);
+    color: beige;
+    font-family: var(--regularfont);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+
+.search{
+    background-color: transparent;
+}
+
+input{
+    padding: .5em;
+    font-family: var(--regularfont);
+    font-size: 14px;
+    border-radius: .5em;
+    border-color: transparent;
+}
+
+#searchicon {
+width: 20px;
+height: 20px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0 auto; 
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+li{
+    background-color: var(--purplebutton);
+    padding: .5em;
+    margin: 0;
+    list-style: none;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: .5em;
+    font-size: 12px;
+}
+
+
+/* stories */
+div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+a{
+    background-color: white;
+    padding: 1em;
+    border-radius: .5em;
+    display: grid;
+    grid-template-columns: 1fr, 4fr, .5fr;
+    grid-template-rows: 1fr repeat(3);
+    margin-bottom: 1em;
+}
+
+h2, p{
+    color: black;
+    padding-left: 1em;
+}
+
+a img{
+    grid-area: 1/1/4/2;
+    width: 67px;
+    height: 67px;
+    border-radius: .5em;
+}
+
+.taal{
+  grid-area: 1/3/2/4;  
+}
+
+.play{
+    grid-area: 3/2/4/4;
+    padding-top: .5em;
+    display: flex;
+    flex-direction: row;
+    margin-left: .5em;
+}
+
+h2{
+    grid-area: 1/2/2/3;
+    font-size: 10px;
+    margin: 0;
+}
+
+p{
+    grid-area: 2/2/3/3;
+    font-size: 8px;
+    margin: 0;
+}
+
+/* story blokje */
+a{
+    text-decoration: none;
+}
+
+.terug{
+    background-color: transparent;
+}

@@ -1,0 +1,232 @@
+:root {
+    --background-color: linear-gradient(1.76deg, #142151 1.49%, #471871 98.51%);
+    --greenbutton: #139943;
+    --regularfont: 'Poppins-Regular', sans-serif;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+
+body{
+    background: linear-gradient(180deg, rgba(71,24,113,1) 0%, rgba(20,33,81,1) 100%);
+    color: beige;
+    font-family: var(--regularfont);
+    margin: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1em;
+    background-color: var(--greenbutton);
+    padding-bottom: .5em;
+    padding-top: .5em;
+    border-radius: .5em;
+
+}
+
+button {
+    background-color: var(--greenbutton);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border:none; 
+    color: white; 
+    font-size: 14px; 
+    text-align: center; 
+    cursor: pointer;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+nav p{
+    grid-area: 1/1/2/2;
+}
+
+nav svg {
+    grid-area: 1/2/2/3;
+}
+
+
+
+/* button{
+    border:none; 
+    color: white; 
+    font-size: 14px; 
+    text-align: center; 
+    cursor: pointer;
+    outline: none;
+    padding: .5em;
+} */
+
+
+/* own playlist */
+h2{
+    margin-top: 2em;
+    margin-bottom: .5em;
+    font-size: 20px;
+    color: white;
+}
+
+
+.playlist{
+    background-color: white;
+    width: 35%;
+    text-align: center;
+    color: black;
+    margin-top: 0;
+    padding: 1em;
+    border-radius: .5em;
+    display: grid;
+}
+
+.playlist p{
+    text-align: left;
+    font-size: 11px;
+}
+
+.time{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    align-content: center;
+}
+
+.time svg{
+    grid-area: 1/ 1/ 2 / 2;
+}
+
+.time p{
+    grid-area: 1/ 2 / 2 /3;
+    margin: 0;
+    margin-top: .5em;
+}
+
+/* .make-your-own{
+    background-color: #494375;
+    border-radius: .5em;
+    width: 35%;
+} */
+
+.make-your-own p{
+    color: white;
+}
+
+
+/* all stories */
+a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.AllStories{
+    background-color: transparent;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+li{
+    background-color: white;
+    color: black;
+    list-style: none;
+    font-size: 12px;
+    padding: .5em;
+    border-radius: .5em;
+    padding: 0;
+}
+
+
+.stories{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: visible; */
+}
+
+article{
+    background-color: white;
+    padding: 1em;
+    border-radius: .5em;
+    display: grid;
+    grid-template-columns: 1fr, 4fr, .5fr;
+    grid-template-rows: 1fr repeat(3);
+    margin-bottom: 1em;
+}
+
+h4, p{
+    color: black;
+    padding-left: 1em;
+}
+
+article img{
+    grid-area: 1/1/4/2;
+    width: 67px;
+    height: auto;
+    border-radius: .5em;
+}
+
+
+article p{
+    grid-area: 2/2/3/4;
+    margin: 0;
+}
+
+article h2{
+    grid-area: 1/2/2/3;
+    margin: 0;
+}
+
+.taal{
+  grid-area: 1/3/2/4;  
+}
+
+.play{
+    grid-area: 3/2/4/4;
+    padding-top: .5em;
+    display: flex;
+    flex-direction: row;
+}
+
+
+p{
+    font-size: 8px;
+}
+
+.stories svg{
+    padding-left: .5em;
+}
+
+/* all stories nav */
+.AllStories nav{
+    background-color: white;
+    width: auto;
+    padding-top: 0;
+}
+
+.AllStories p{
+    font-size: 12px;
+    padding: 1em;
+    max-width: auto;
+}
+
+.AllStories ul{
+    padding: 0;
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+h4{
+    font-size: 10px;
+    margin: 0;
+}
